@@ -59,7 +59,7 @@ const Header = () => {
     <div className="header" ref={headerRef}>
       <div className="container">
         <div className="header__logo">
-          <Link to="/">Upstyle.</Link>
+          <Link to="/">UPSTYLE.</Link>
         </div>
         <div className="header__menu">
           <div className="header__menu__mobile-toggle" onClick={menuToggle}>
@@ -87,13 +87,14 @@ const Header = () => {
             <div className="header__menu__item header__menu__right__item">
               <SearchOutlinedIcon />
             </div>
+
+            <div className="header__menu__item header__menu__right__item">
+              <PersonOutlineOutlinedIcon />
+            </div>
             <div className="header__menu__item header__menu__right__item">
               <Link to="/cart">
                 <ShoppingBagOutlinedIcon />
               </Link>
-            </div>
-            <div className="header__menu__item header__menu__right__item">
-              <PersonOutlineOutlinedIcon />
             </div>
           </div>
         </div>
