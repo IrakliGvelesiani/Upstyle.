@@ -1,0 +1,19 @@
+.announcement-bar {
+  background: $txt-main-color;
+  color: #fff;
+  font-size: 0.8rem;
+
+  .announcment-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+  .announcment-text .ann-link {
+    text-decoration: underline;
+  }
+  .announcment-text .ann-link:hover,
+  .announcment-text .ann:hover {
+    color: $txt-second-color;
+  }
+}
