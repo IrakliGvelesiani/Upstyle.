@@ -1,0 +1,30 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: $txt-main-color;
+  font-weight: 600;
+  font-size: 1rem;
+  color: $txt-second-color;
+  padding: 25px;
+
+  a:hover {
+    color: $txt-white;
+  }
+
+  .copyright__text {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 15px;
+
+    @include tablet {
+      font-size: 0.9rem;
+    }
+
+    .copyright__link {
+      text-decoration: underline;
+    }
+  }
+}

@@ -4,25 +4,25 @@ import { Link } from "react-router-dom";
 
 import Grid from "../Grid/Grid";
 
-const footerAboutLinks = [
+const footerSupportLinks = [
   {
-    display: "Shipping & Returns",
+    display: "Gift Cards",
     path: "/about",
   },
   {
-    display: "Help & FAQ",
+    display: "Shipping",
     path: "/about",
   },
   {
-    display: "Terms & Conditions",
+    display: "Returns",
+    path: "/about",
+  },
+  {
+    display: "FAQs",
     path: "/about",
   },
   {
     display: "Privacy Policy",
-    path: "/about",
-  },
-  {
-    display: "Contact",
     path: "/about",
   },
 ];
@@ -41,6 +41,25 @@ const footerCustomerLinks = [
     path: "/about",
   },
 ];
+
+const footerAboutLinks = [
+  {
+    display: "About Us",
+    path: "/about",
+  },
+  {
+    display: "Store Location",
+    path: "/about",
+  },
+  {
+    display: "Contact",
+    path: "/about",
+  },
+  {
+    display: "Orders tracking",
+    path: "/about",
+  },
+];
 const Footer = () => {
   return (
     <footer className="footer">
@@ -49,11 +68,11 @@ const Footer = () => {
           <div>
             <div className="footer__title">About</div>
             <div className="footer__content">
-              <p>About us</p>
-              <p>Store location</p>
-
-              <p>Contact</p>
-              <p>Orders tracking</p>
+              {footerAboutLinks.map((item, index) => (
+                <p key={index}>
+                  <Link to={item.path}>{item.display}</Link>
+                </p>
+              ))}
             </div>
           </div>
           <div>
@@ -69,7 +88,7 @@ const Footer = () => {
           <div>
             <div className="footer__title">Support</div>
             <div className="footer__content">
-              {footerAboutLinks.map((item, index) => (
+              {footerSupportLinks.map((item, index) => (
                 <p key={index}>
                   <Link to={item.path}>{item.display}</Link>
                 </p>
@@ -83,12 +102,22 @@ const Footer = () => {
                 UPSTYLE.
               </Link>
             </p>
+            <h3>JOIN THE TEAM</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Cupiditate incidunt et, itaque illum praesentium dolore qui maxime
-              labore consequuntur officia, sunt laudantium perspiciatis,
-              voluptatum cum?
+              Be the first in line for new drops,limited <br />
+              offers,and VIP community events
             </p>
+            <div className="emailBox">
+              <input
+                id="emailAddress"
+                type="email"
+                size="34"
+                maxlength="40"
+                required
+                placeholder="Enter your email addres"
+              />
+              <button>Subscribe</button>
+            </div>
           </div>
         </Grid>
       </div>

@@ -16,12 +16,16 @@ const mainNav = [
     path: "/",
   },
   {
-    display: "Catalog",
-    path: "/catalog",
+    display: "New Arrivals",
+    path: "/new-arrivals",
   },
   {
-    display: "Accessories",
-    path: "/accessories",
+    display: "Women",
+    path: "/women",
+  },
+  {
+    display: "Men",
+    path: "/men",
   },
   {
     display: "Contact",

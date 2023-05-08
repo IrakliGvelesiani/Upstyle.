@@ -2,7 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Helmet = (props) => {
-  document.title = "UPSTYLE - " + props.title;
+  document.title = "UPSTYLE. - " + props.title;
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return <div>{props.children}</div>;
 };

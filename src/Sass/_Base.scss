@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
 @import "./Variables";
 @import "./Mixins";
@@ -16,7 +19,8 @@ html {
 }
 
 body {
-  font-family: "Roboto Slab", serif;
+  // font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
 }
 
 ul {
@@ -26,14 +30,17 @@ ul {
 a {
   text-decoration: none;
   color: unset;
-}
-a:hover {
-  color: $txt-second-color;
-  text-decoration: underline;
+  display: inline-block;
+  position: relative;
 }
 
 img {
   max-width: 100%;
+}
+
+.section__title {
+  letter-spacing: 5px;
+  font-weight: 900;
 }
 
 @each $color, $val in $colors {
@@ -68,33 +75,9 @@ img {
   }
 }
 
-.container {
-  width: 100%;
-  max-width: 1620px;
-  padding: 0 50px;
-  margin: auto;
-
-  @include tablet {
-    padding: 0 20px;
-  }
-
-  @include mobile {
-    padding: 0 10px;
-  }
-}
-
 .main {
-  margin-top: $header-height;
   margin-bottom: 2rem;
   min-height: 100vh;
-
-  @include tablet {
-    margin-top: calc(#{$header-tablet-height} + 20px);
-  }
-
-  @include mobile {
-    margin-top: calc(#{$header-mobile-height} + 10px);
-  }
 }
 
 .grid {

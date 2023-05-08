@@ -1,32 +1,77 @@
 .footer {
-  background: $main-bg;
-  border-top: 1px solid #000;
-  padding: 70px 0;
+  background: $footer-bg;
+  padding: 70px 50px;
   box-shadow: $box-shadow;
   font-weight: 600;
   font-size: 1.1rem;
 
+  a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $txt-main-color;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
   .Logo {
+    pointer-events: none;
     font-family: "Bruno Ace SC", cursive;
     font-size: 32px;
     font-weight: 700;
   }
 
   &__about {
+    h3 {
+      font-size: 14px;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
     p {
+      margin-top: 10px;
+      font-weight: 700;
       margin-bottom: 2rem;
+      color: $txt-main-color;
     }
   }
 
   &__title {
     text-transform: uppercase;
     margin-bottom: 2rem;
-    font-weight: 900;
+    font-weight: 700;
   }
 
   &__content {
     p {
+      color: $txt-main-color;
       margin-bottom: 1.25rem;
     }
+  }
+
+  input {
+    border: 1px solid #000;
+    padding: 15px;
+  }
+  button {
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    padding: 20px 119px;
+    background: $txt-main-color;
+    color: $txt-white;
+  }
+  button:hover {
+    background: #3a3833;
   }
 }
