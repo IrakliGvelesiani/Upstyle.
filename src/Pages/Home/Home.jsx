@@ -8,6 +8,7 @@ import Section, {
 
 import Helmet from "../../Components/Helmet/Helmet";
 import HeroSlider from "../../Components/HeroSlider/HeroSlider";
+import MasonryLayout from "../../Components/MasonryLayout/MasonryLayout";
 
 import KeyFutures from "../../Components/KeyFutures/KeyFutures";
 import Grid from "../../Components/Grid/Grid";
@@ -23,7 +24,7 @@ const Home = () => {
       <HeroSlider />
       {/* end hero slider */}
 
-      {/* Policy section */}
+      {/* Features section */}
       <Section>
         <SectionBody>
           <Grid col={4} mdCol={2} smCol={1} gap={20}>
@@ -39,31 +40,11 @@ const Home = () => {
           </Grid>
         </SectionBody>
       </Section>
-      {/* end Policy section */}
+      {/* Features section */}
 
-      {/* best selling section */}
+      {/* Featured Products Section */}
       <Section>
-        <SectionTitle>Best Selling</SectionTitle>
-        <SectionBody>
-          <Grid col={4} mdCol={2} smCol={1} gap={20}>
-            {productData.getProducts(4).map((item, index) => (
-              <ProductCard
-                key={index}
-                img01={item.image01}
-                img02={item.image02}
-                name={item.title}
-                price={Number(item.price)}
-                slug={item.slug}
-              />
-            ))}
-          </Grid>
-        </SectionBody>
-      </Section>
-      {/* end best selling section */}
-
-      {/* new arrival section */}
-      <Section>
-        <SectionTitle>New Arrivals</SectionTitle>
+        <SectionTitle>Featured Products</SectionTitle>
         <SectionBody>
           <Grid col={4} mdCol={2} smCol={1} gap={20}>
             {productData.getProducts(8).map((item, index) => (
@@ -79,14 +60,20 @@ const Home = () => {
           </Grid>
         </SectionBody>
       </Section>
-      {/* end new arrival section */}
+      {/* Featured Products Section */}
 
-      {/* popular product section */}
       <Section>
-        <SectionTitle>Popular</SectionTitle>
+        <SectionBody>
+          <MasonryLayout />
+        </SectionBody>
+      </Section>
+
+      {/* New Arrivals Section */}
+      <Section>
+        <SectionTitle>New Arrivals</SectionTitle>
         <SectionBody>
           <Grid col={4} mdCol={2} smCol={1} gap={20}>
-            {productData.getProducts(12).map((item, index) => (
+            {productData.getProducts(4).map((item, index) => (
               <ProductCard
                 key={index}
                 img01={item.image01}
@@ -99,7 +86,7 @@ const Home = () => {
           </Grid>
         </SectionBody>
       </Section>
-      {/* end popular product section */}
+      {/* New Arrivals Section */}
     </Helmet>
   );
 };

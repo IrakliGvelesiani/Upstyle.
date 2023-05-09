@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 
 const KeyFutures = (props) => {
   return (
-    <div className="policy-cards">
-      <div className="policy-cards__icon">
+    <div className="key-features">
+      <div className="key-features__icon">
         <i className={props.icon}></i>
       </div>
-      <div className="policy-cards__info">
-        <div className="policy-cards__info__title">{props.name}</div>
-        <div className="policy-cards__info__description">
+      <div className="key-features__info">
+        <div className="key-features__info__title">{props.name}</div>
+        <div className="key-features__info__description">
           {props.description}
         </div>
       </div>
