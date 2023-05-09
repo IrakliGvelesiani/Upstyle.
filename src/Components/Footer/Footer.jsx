@@ -112,7 +112,7 @@ const Footer = () => {
                 id="emailAddress"
                 type="email"
                 size="34"
-                maxlength="40"
+                maxLength="40"
                 required
                 placeholder="Enter your email addres"
               />

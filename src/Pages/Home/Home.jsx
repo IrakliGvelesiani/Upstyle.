@@ -9,6 +9,7 @@ import Section, {
 import Helmet from "../../Components/Helmet/Helmet";
 import HeroSlider from "../../Components/HeroSlider/HeroSlider";
 import MasonryLayout from "../../Components/MasonryLayout/MasonryLayout";
+import Banner from "../../Components/Banner/Banner";
 
 import KeyFutures from "../../Components/KeyFutures/KeyFutures";
 import Grid from "../../Components/Grid/Grid";
@@ -24,23 +25,13 @@ const Home = () => {
       <HeroSlider />
       {/* end hero slider */}
 
-      {/* Features section */}
+      {/* MasonryLayout */}
       <Section>
         <SectionBody>
-          <Grid col={4} mdCol={2} smCol={1} gap={20}>
-            {Features.map((item, index) => (
-              <Link key={index} to="/features">
-                <KeyFutures
-                  name={item.name}
-                  description={item.description}
-                  icon={item.icon}
-                />
-              </Link>
-            ))}
-          </Grid>
+          <MasonryLayout />
         </SectionBody>
       </Section>
-      {/* Features section */}
+      {/* MasonryLayout */}
 
       {/* Featured Products Section */}
       <Section>
@@ -62,12 +53,6 @@ const Home = () => {
       </Section>
       {/* Featured Products Section */}
 
-      <Section>
-        <SectionBody>
-          <MasonryLayout />
-        </SectionBody>
-      </Section>
-
       {/* New Arrivals Section */}
       <Section>
         <SectionTitle>New Arrivals</SectionTitle>
@@ -87,6 +72,32 @@ const Home = () => {
         </SectionBody>
       </Section>
       {/* New Arrivals Section */}
+
+      {/* Banner Section */}
+      <section>
+        <SectionBody>
+          <Banner />
+        </SectionBody>
+      </section>
+      {/* Banner Section */}
+
+      {/* Features section */}
+      <Section>
+        <SectionBody>
+          <Grid col={4} mdCol={2} smCol={1} gap={20}>
+            {Features.map((item, index) => (
+              <Link key={index} to="/features">
+                <KeyFutures
+                  name={item.name}
+                  description={item.description}
+                  icon={item.icon}
+                />
+              </Link>
+            ))}
+          </Grid>
+        </SectionBody>
+      </Section>
+      {/* Features section */}
     </Helmet>
   );
 };

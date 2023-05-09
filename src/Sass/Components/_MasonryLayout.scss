@@ -30,24 +30,28 @@
     overflow: hidden;
 
     button {
+      font-size: 10px;
+      font-weight: 700;
       position: absolute;
       min-width: 100px;
       width: fit-content;
-      height: 50px;
+      height: 35px;
       padding: 10px;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      bottom: 10px;
+      right: 10px;
       margin: auto;
       cursor: pointer;
       border: none;
-      background: $txt-main-color;
-      color: $txt-white;
+      background: $txt-white;
+      color: $txt-main-color;
       text-transform: uppercase;
 
       &:hover {
-        background-color: #3a3833;
+        color: $main-color;
+      }
+
+      @include tablet {
+        left: 4px;
       }
     }
 

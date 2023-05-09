@@ -1,0 +1,85 @@
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet {
+    .banner-img-right,
+    .banner-img-left {
+      display: none;
+    }
+  }
+
+  .banner {
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    background: radial-gradient(
+      circle at 18.7% 37.8%,
+      rgb(250, 250, 250) 0%,
+      rgb(225, 234, 238) 90%
+    );
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .banner-img-left {
+    flex: 1 1 250px;
+    padding: 15px;
+    text-align: center;
+
+    img {
+      width: 30%;
+    }
+  }
+
+  .content {
+    flex: 1 1 550px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+
+    h3 {
+      color: $main-color;
+      font-size: 30px;
+    }
+
+    span {
+      font-size: 50px;
+    }
+
+    p {
+      font-weight: 700;
+      font-size: 15px;
+      padding: 10px 0;
+    }
+
+    button {
+      margin-top: 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      outline: none;
+      border: none;
+      background-color: #1d1d1d;
+      color: aliceblue;
+      padding: 13px 30px;
+      text-transform: uppercase;
+      transition: 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        background: #2c2c2c;
+      }
+    }
+  }
+  .banner-img-right {
+    position: relative;
+    padding: 10px;
+    flex: 1 1 250px;
+
+    img {
+      width: 30%;
+    }
+  }
+}
