@@ -15,7 +15,7 @@ const Futures = [
     icon: "bx bxs-discount",
   },
   {
-    name: "Daily Surprise Offers",
+    name: "Daily Offers",
     description: "Save up to 25% off",
     icon: "bx bx-gift",
   },

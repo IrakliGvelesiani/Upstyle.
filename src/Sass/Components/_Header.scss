@@ -59,6 +59,10 @@
     font-family: "Bruno Ace SC", cursive;
     font-size: 32px;
     font-weight: 700;
+
+    @include tablet {
+      font-size: 27px;
+    }
   }
 
   &__menu {
@@ -92,7 +96,7 @@
         @include flex(center, center);
 
         @include tablet {
-          margin-left: 10px;
+          margin-left: 20px;
         }
       }
 

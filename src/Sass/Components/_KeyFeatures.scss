@@ -1,7 +1,7 @@
 .key-features {
   @include flex(center, flex-start);
   margin: 50px 50px;
-  padding: 30px;
+  padding: 10px;
   padding-left: 0;
   transition: transform 0.5s ease;
   border-radius: 10px;
@@ -24,7 +24,7 @@
 
   &__info {
     &__title {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 900;
       margin-bottom: 10px;
     }

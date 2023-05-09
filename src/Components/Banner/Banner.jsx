@@ -19,7 +19,7 @@ const Banner = () => {
             commodo faucibus torquent donec
           </p>
           <button>
-            <Link>view offer</Link>
+            <Link to="/">view offer</Link>
           </button>
         </div>
         <div className="banner-img-right">
