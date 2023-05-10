@@ -11,9 +11,9 @@ const Routes = () => {
   return (
     <Switch>
       <Route path="/" exact component={Home} />
-      <Route path="/products/:slug" component={Product} />
-      <Route path="/products" component={NewArrivals} />
+      <Route path="/new-arrivals" component={NewArrivals} />
       <Route path="/cart" component={Cart} />
+      <Route path="/products/:slug" component={Product} />
     </Switch>
   );
 };

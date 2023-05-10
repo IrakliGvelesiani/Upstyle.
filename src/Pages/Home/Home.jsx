@@ -10,6 +10,7 @@ import Helmet from "../../Components/Helmet/Helmet";
 import HeroSlider from "../../Components/HeroSlider/HeroSlider";
 import MasonryLayout from "../../Components/MasonryLayout/MasonryLayout";
 import Banner from "../../Components/Banner/Banner";
+import Explore from "../../Components/Explore/Explore";
 
 import KeyFutures from "../../Components/KeyFutures/KeyFutures";
 import Grid from "../../Components/Grid/Grid";
@@ -98,6 +99,15 @@ const Home = () => {
         </SectionBody>
       </Section>
       {/* Featured Products Section */}
+
+      {/* More To Explore */}
+      <Section>
+        <SectionTitle>More To Explore</SectionTitle>
+        <SectionBody>
+          <Explore />
+        </SectionBody>
+      </Section>
+      {/* More To Explore */}
     </Helmet>
   );
 };

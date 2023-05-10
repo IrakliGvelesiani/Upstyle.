@@ -59,13 +59,43 @@ const product_12_image_01 =
 const product_12_image_02 =
   require("../Images/Products/product-12 (2).jpg").default;
 
+const product_13_image_01 =
+  require("../Images/Products/product-13 (1).jpg").default;
+const product_13_image_02 =
+  require("../Images/Products/product-13 (2).jpg").default;
+
+const product_14_image_01 =
+  require("../Images/Products/product-14 (1).jpg").default;
+const product_14_image_02 =
+  require("../Images/Products/product-14 (2).jpg").default;
+
+const product_15_image_01 =
+  require("../Images/Products/product-15 (1).jpg").default;
+const product_15_image_02 =
+  require("../Images/Products/product-15 (2).jpg").default;
+
+const product_16_image_01 =
+  require("../Images/Products/product-16 (1).jpg").default;
+const product_16_image_02 =
+  require("../Images/Products/product-16 (2).jpg").default;
+
+const product_17_image_01 =
+  require("../Images/Products/product-17 (1).jpg").default;
+const product_17_image_02 =
+  require("../Images/Products/product-17 (2).jpg").default;
+
+const product_18_image_01 =
+  require("../Images/Products/product-18 (1).jpg").default;
+const product_18_image_02 =
+  require("../Images/Products/product-18 (2).jpg").default;
+
 const products = [
   {
     title: "CARGO PARACHUTE TROUSER - STONE",
     price: "99",
     image01: product_01_image_01,
     image02: product_01_image_02,
-    categorySlug: "ao-thun",
+    categorySlug: "cargos",
     colors: ["white", "red", "orange"],
     slug: "cargo-parachute-trouser-stone-1",
     size: ["s", "m", "l", "xl"],
@@ -75,7 +105,7 @@ const products = [
     price: "105",
     image01: product_02_image_01,
     image02: product_02_image_02,
-    categorySlug: "ao-thun",
+    categorySlug: "crops",
     colors: ["white", "red", "blue"],
     slug: "boxy-cropped-paradise-bowling-shirt-ecru",
     size: ["s", "m"],
@@ -85,7 +115,7 @@ const products = [
     price: "58",
     image01: product_03_image_01,
     image02: product_03_image_02,
-    categorySlug: "ao-thun",
+    categorySlug: "trouser",
     colors: ["white", "red", "orange", "yellow"],
     slug: "parachute-trouser-grey",
     size: ["m"],
@@ -95,7 +125,7 @@ const products = [
     price: "48",
     image01: product_04_image_01,
     image02: product_04_image_02,
-    categorySlug: "ao-thun",
+    categorySlug: "trouser",
     colors: ["white", "orange", "blue"],
     slug: "parachute-trouser-black",
     size: ["xl"],
@@ -105,7 +135,7 @@ const products = [
     price: "61",
     image01: product_05_image_01,
     image02: product_05_image_02,
-    categorySlug: "ao-thun",
+    categorySlug: "cargos",
     colors: ["white", "pink"],
     slug: "straight-leg-cargo-trouser-taupe",
     size: ["xxl"],
@@ -115,7 +145,7 @@ const products = [
     price: "58",
     image01: product_06_image_01,
     image02: product_06_image_02,
-    categorySlug: "ao-thun",
+    categorySlug: "crops",
     colors: ["black"],
     slug: "grand-resort-crop-t-shirt-black",
     size: ["s", "m", "xl"],
@@ -125,7 +155,8 @@ const products = [
     price: "80",
     image01: product_07_image_01,
     image02: product_07_image_02,
-    categorySlug: "ao-somi",
+    asd: ["asd", "bsf"],
+    // : "crops",
     colors: ["white", "red", "orange", "blue"],
     slug: "mesh-printed-long-sleeve-top-multi",
     size: ["l", "xl"],
@@ -135,7 +166,7 @@ const products = [
     price: "38",
     image01: product_08_image_01,
     image02: product_08_image_02,
-    categorySlug: "ao-somi",
+    categorySlug: "cargos",
     colors: ["white", "red", "black"],
     slug: "straight-leg-cargo-trouser-taupe",
     size: ["s", "m", "xl"],
@@ -145,7 +176,7 @@ const products = [
     price: "38",
     image01: product_09_image_01,
     image02: product_09_image_02,
-    categorySlug: "ao-somi",
+    categorySlug: "cargos",
     colors: ["white", "blue"],
     slug: "straight-leg-cargo-trouser-black",
     size: ["m"],
@@ -155,17 +186,17 @@ const products = [
     price: "88",
     image01: product_10_image_01,
     image02: product_10_image_02,
-    categorySlug: "quan-jean",
+    categorySlug: "crops",
     colors: ["blue", "black"],
     slug: "cropped-puffer-gilet-black",
-    size: ["l"],
+    size: ["l", "xl"],
   },
   {
     title: "DOUBLE LAYER MESH SLEEVE CROP TOP - BLACK",
     price: "78",
     image01: product_11_image_01,
     image02: product_11_image_02,
-    categorySlug: "quan-jean",
+    categorySlug: "crops",
     colors: ["blue", "black"],
     slug: "double-layer-mesh-sleeve-crop-top-black",
     size: ["s", "m", "xl"],
@@ -175,67 +206,67 @@ const products = [
     price: "78",
     image01: product_12_image_01,
     image02: product_12_image_02,
-    categorySlug: "quan-jean",
+    categorySlug: "crops",
     colors: ["blue"],
     slug: "double-layer-mesh-sleeve-crop-top-white",
     size: ["s", "m", "xl"],
   },
   {
-    title: "CARGO PARACHUTE TROUSER - STONE",
-    price: "48",
-    image01: product_01_image_01,
-    image02: product_01_image_02,
-    categorySlug: "ao-thun",
+    title: "MULTI CARGO POCKET JEANS - BLACK",
+    price: "76",
+    image01: product_13_image_01,
+    image02: product_13_image_02,
+    categorySlug: "jeans",
     colors: ["white", "red"],
-    slug: "cargo-parachute-trouser-stone-1",
+    slug: "multi-cargo-pocket-jeans-black",
     size: ["s", "m", "xl"],
   },
   {
-    title: "BOXY CROPPED PARADISE BOWLING SHIRT - ECRU",
-    price: "39",
-    image01: product_02_image_01,
-    image02: product_02_image_02,
-    categorySlug: "ao-thun",
+    title: "RELAXED RAW EDGE DETAIL JEANS - ICE BLUE",
+    price: "92",
+    image01: product_14_image_01,
+    image02: product_14_image_02,
+    categorySlug: "jeans",
     colors: ["white", "blue"],
     slug: "boxy-cropped-paradise-bowling-shirt-ecru",
     size: ["s", "m"],
   },
   {
-    title: "PARACHUTE TROUSER - GREY",
-    price: "20",
-    image01: product_03_image_01,
-    image02: product_03_image_02,
-    categorySlug: "ao-thun",
+    title: "SPLIT HEM JOGGER - GREY MARL",
+    price: "38",
+    image01: product_15_image_01,
+    image02: product_15_image_02,
+    categorySlug: "joggers",
     colors: ["red", "blue"],
     slug: "parachute-trouser-grey",
     size: ["xl"],
   },
   {
-    title: "STRAIGHT LEG CARGO TROUSER - BEIGE",
-    price: "41",
-    image01: product_08_image_01,
-    image02: product_08_image_02,
-    categorySlug: "ao-somi",
+    title: "SPLIT HEM JOGGER - CHOCOLATE",
+    price: "38",
+    image01: product_16_image_01,
+    image02: product_16_image_02,
+    categorySlug: "joggers",
     colors: ["blue", "black"],
     slug: "straight-leg-cargo-trouser-beige",
     size: ["m", "xl"],
   },
   {
-    title: "STRAIGHT LEG CARGO TROUSER - BLACK",
-    price: "41",
-    image01: product_09_image_01,
-    image02: product_09_image_02,
-    categorySlug: "ao-somi",
+    title: "HOODIE - CREAM",
+    price: "82",
+    image01: product_17_image_01,
+    image02: product_17_image_02,
+    categorySlug: "hoodies",
     colors: ["white", "blue"],
     slug: "straight-leg-cargo-trouser-black",
     size: ["s", "l", "xl"],
   },
   {
-    title: "CROPPED PUFFER GILET - BLACK",
-    price: "68",
-    image01: product_10_image_01,
-    image02: product_10_image_02,
-    categorySlug: "quan-jean",
+    title: "HOODIE - GREY MARL",
+    price: "82",
+    image01: product_18_image_01,
+    image02: product_18_image_02,
+    categorySlug: "hoodies",
     colors: ["blue", "black"],
     slug: "cropped-puffer-gilet-black",
     size: ["s", "m", "l", "xl"],

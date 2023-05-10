@@ -41,13 +41,14 @@
       right: 10px;
       margin: auto;
       cursor: pointer;
-      border: none;
+      border: 1px solid #000;
       background: $txt-white;
       color: $txt-main-color;
       text-transform: uppercase;
 
       &:hover {
-        color: $main-color;
+        background: $txt-main-color;
+        color: $txt-white;
       }
 
       @include tablet {
