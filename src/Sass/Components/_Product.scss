@@ -1,0 +1,225 @@
+.product {
+  font-family: "Kameron", serif;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+
+  @include tablet {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  &__images {
+    margin: 50px;
+    @include flex(flex-start, flex-start);
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @include tablet {
+      width: 100%;
+    }
+
+    @include mobile {
+      width: 80%;
+    }
+
+    &__list {
+      width: 20%;
+
+      &__item {
+        cursor: pointer;
+      }
+    }
+
+    &__main {
+      flex-grow: 1;
+      padding-top: 100%;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 54%;
+        height: 100%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &__info {
+    margin-left: 50px;
+    flex-grow: 1;
+    top: $header-shrink-height;
+    padding-top: 4rem;
+
+    @include mobile {
+      position: relative;
+      top: unset;
+    }
+
+    &__title {
+      font-size: 2.1rem;
+      font-weight: normal;
+
+      @include mobile {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__item {
+      margin-top: 2rem;
+
+      &__price {
+        color: $main-color;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      &__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      &__list {
+        @include flex(center, flex-start);
+
+        &__item {
+          @include flex(center, center);
+
+          width: 50px;
+          height: 30px;
+          border: 1px solid $txt-second-color;
+          cursor: pointer;
+          margin-right: 1rem;
+
+          @include mobile {
+            width: 30px;
+            height: 30px;
+          }
+
+          &.active {
+            background: #000;
+            border: none;
+            color: $txt-white;
+          }
+
+          .circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+
+            @include mobile {
+              width: 30px;
+              height: 30px;
+            }
+          }
+
+          &__size {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      &__quantity {
+        @include flex(flex-start, flex-start);
+
+        .product__info__item__quantity__btn__plus {
+          @include flex(center, center);
+          width: 30px;
+          border-right: 1px solid $txt-second-color;
+          border-top: 1px solid $txt-second-color;
+          border-bottom: 1px solid $txt-second-color;
+          height: 40px;
+          font-size: 1.5rem;
+          cursor: pointer;
+        }
+        .product__info__item__quantity__btn__minus {
+          @include flex(center, center);
+          width: 30px;
+          border-left: 1px solid $txt-second-color;
+          border-top: 1px solid $txt-second-color;
+          border-bottom: 1px solid $txt-second-color;
+          height: 40px;
+          font-size: 1.5rem;
+          cursor: pointer;
+        }
+
+        &__input {
+          @include flex(center, center);
+          height: 40px;
+          width: 40px;
+          font-size: 1.5rem;
+          border-top: 1px solid $txt-second-color;
+          border-bottom: 1px solid $txt-second-color;
+        }
+      }
+
+      button {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.Collapsible {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 60%;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.Collapsible__contentInner {
+  padding: 10px;
+  border-top: 0;
+
+  p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.Collapsible__trigger {
+  letter-spacing: 2px;
+  font-size: 14px;
+
+  display: block;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  border-bottom: 1px solid $txt-second-color;
+  padding: 10px;
+  color: $txt-main-color;
+
+  &:after {
+    content: "\2193 ";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+  }
+
+  &.is-open {
+    &:after {
+      transform: rotateZ(180deg);
+    }
+  }
+
+  &.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+  }
+}

@@ -99,6 +99,8 @@ const products = [
     colors: ["white", "red", "orange"],
     slug: "cargo-parachute-trouser-stone-1",
     size: ["s", "m", "l", "xl"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "BOXY CROPPED PARADISE BOWLING SHIRT - ECRU",
@@ -109,6 +111,8 @@ const products = [
     colors: ["white", "red", "blue"],
     slug: "boxy-cropped-paradise-bowling-shirt-ecru",
     size: ["s", "m"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "PARACHUTE TROUSER - GREY",
@@ -119,6 +123,8 @@ const products = [
     colors: ["white", "red", "orange", "yellow"],
     slug: "parachute-trouser-grey",
     size: ["m"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "PARACHUTE TROUSER - BLACK",
@@ -129,6 +135,8 @@ const products = [
     colors: ["white", "orange", "blue"],
     slug: "parachute-trouser-black",
     size: ["xl"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "STRAIGHT LEG CARGO TROUSER - TAUPE",
@@ -139,6 +147,8 @@ const products = [
     colors: ["white", "pink"],
     slug: "straight-leg-cargo-trouser-taupe",
     size: ["xxl"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "GRAND RESORT CROP T-SHIRT - BLACK",
@@ -149,6 +159,8 @@ const products = [
     colors: ["black"],
     slug: "grand-resort-crop-t-shirt-black",
     size: ["s", "m", "xl"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "MESH PRINTED LONG SLEEVE TOP - MULTI",
@@ -156,10 +168,12 @@ const products = [
     image01: product_07_image_01,
     image02: product_07_image_02,
     asd: ["asd", "bsf"],
-    // : "crops",
+    categorySlug: "crops",
     colors: ["white", "red", "orange", "blue"],
     slug: "mesh-printed-long-sleeve-top-multi",
     size: ["l", "xl"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "STRAIGHT LEG CARGO TROUSER - TAUPE",
@@ -170,6 +184,8 @@ const products = [
     colors: ["white", "red", "black"],
     slug: "straight-leg-cargo-trouser-taupe",
     size: ["s", "m", "xl"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "STRAIGHT LEG CARGO TROUSER - BLACK",
@@ -180,6 +196,8 @@ const products = [
     colors: ["white", "blue"],
     slug: "straight-leg-cargo-trouser-black",
     size: ["m"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "CROPPED PUFFER GILET - BLACK",
@@ -190,6 +208,8 @@ const products = [
     colors: ["blue", "black"],
     slug: "cropped-puffer-gilet-black",
     size: ["l", "xl"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "DOUBLE LAYER MESH SLEEVE CROP TOP - BLACK",
@@ -200,6 +220,8 @@ const products = [
     colors: ["blue", "black"],
     slug: "double-layer-mesh-sleeve-crop-top-black",
     size: ["s", "m", "xl"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "DOUBLE LAYER MESH SLEEVE CROP TOP - WHITE",
@@ -210,6 +232,8 @@ const products = [
     colors: ["blue"],
     slug: "double-layer-mesh-sleeve-crop-top-white",
     size: ["s", "m", "xl"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "MULTI CARGO POCKET JEANS - BLACK",
@@ -220,6 +244,8 @@ const products = [
     colors: ["white", "red"],
     slug: "multi-cargo-pocket-jeans-black",
     size: ["s", "m", "xl"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "RELAXED RAW EDGE DETAIL JEANS - ICE BLUE",
@@ -230,6 +256,8 @@ const products = [
     colors: ["white", "blue"],
     slug: "boxy-cropped-paradise-bowling-shirt-ecru",
     size: ["s", "m"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "SPLIT HEM JOGGER - GREY MARL",
@@ -240,6 +268,8 @@ const products = [
     colors: ["red", "blue"],
     slug: "parachute-trouser-grey",
     size: ["xl"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "SPLIT HEM JOGGER - CHOCOLATE",
@@ -250,6 +280,8 @@ const products = [
     colors: ["blue", "black"],
     slug: "straight-leg-cargo-trouser-beige",
     size: ["m", "xl"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "HOODIE - CREAM",
@@ -260,6 +292,8 @@ const products = [
     colors: ["white", "blue"],
     slug: "straight-leg-cargo-trouser-black",
     size: ["s", "l", "xl"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   {
     title: "HOODIE - GREY MARL",
@@ -270,6 +304,8 @@ const products = [
     colors: ["blue", "black"],
     slug: "cropped-puffer-gilet-black",
     size: ["s", "m", "l", "xl"],
+    description:
+      "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
   },
   // 18 products
 ];

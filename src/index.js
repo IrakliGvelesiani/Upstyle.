@@ -2,6 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 
+import { Store } from "../src/Redux/Store";
+import { Provider } from "react-redux";
+
 import "./Assets/boxicons-2.1.4/css/boxicons.min.css";
 import "./Sass/Index.scss";
 
@@ -9,7 +12,9 @@ import Layout from "./Components/Layout/Layout";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Layout />
+    <Provider store={Store}>
+      <Layout />
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );
