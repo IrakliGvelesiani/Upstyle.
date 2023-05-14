@@ -239,7 +239,7 @@ const products = [
     image01: product_14_image_01,
     image02: product_14_image_02,
     categorySlug: "jeans",
-    slug: "boxy-cropped-paradise-bowling-shirt-ecru",
+    slug: "relaxed-raw-edge-detail-jeans-ice-blue",
     size: ["S", "M"],
     description:
       "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
@@ -250,7 +250,7 @@ const products = [
     image01: product_15_image_01,
     image02: product_15_image_02,
     categorySlug: "joggers",
-    slug: "parachute-trouser-grey",
+    slug: "split-hem-jogger-grey-marl",
     size: ["XL"],
     description:
       "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
@@ -261,7 +261,7 @@ const products = [
     image01: product_16_image_01,
     image02: product_16_image_02,
     categorySlug: "joggers",
-    slug: "straight-leg-cargo-trouser-beige",
+    slug: "split-hem-jogger-chocolate",
     size: ["M", "XL"],
     description:
       "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
@@ -272,7 +272,7 @@ const products = [
     image01: product_17_image_01,
     image02: product_17_image_02,
     categorySlug: "hoodies",
-    slug: "straight-leg-cargo-trouser-black",
+    slug: "hoodie-cream",
     size: ["S", "L", "XL"],
     description:
       "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
@@ -283,7 +283,7 @@ const products = [
     image01: product_18_image_01,
     image02: product_18_image_02,
     categorySlug: "hoodies",
-    slug: "cropped-puffer-gilet-black",
+    slug: "hoodie-grey-marl",
     size: ["S", "M", "L", "XL"],
     description:
       "Straight Leg Cargo Trouser in a medium weight cotton.Beige cargo trouser Straight leg fit Side cargo pockets Back cargo pockets Cernucci rubber branding Model measures 5ft 10 and wears size 10 Composition: 100% Cotton",
