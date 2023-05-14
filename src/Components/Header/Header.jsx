@@ -28,8 +28,8 @@ const mainNav = [
     path: "/men",
   },
   {
-    display: "Contact",
-    path: "/contact",
+    display: "Magazine",
+    path: "/magazine",
   },
 ];
 

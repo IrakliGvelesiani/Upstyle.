@@ -2,12 +2,17 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Collapsible from "react-collapsible";
 
+import { useDispatch } from "react-redux";
+
+import { addItem } from "../../Redux/ShoppingCart/CartItemsSlide";
+
 import { withRouter } from "react-router";
 
 import Button from "../Button/Button";
 import numberWithCommas from "../../Utils/NumberWithCommas";
 
 const ProductView = (props) => {
+  const dispatch = useDispatch();
   let product = props.product;
 
   if (product === undefined)
@@ -53,11 +58,31 @@ const ProductView = (props) => {
   };
 
   const addToCart = () => {
-    if (check) console.log({ size, quantity });
+    if (check) {
+      dispatch(
+        addItem({
+          slug: product.slug,
+          size: size,
+          quantity: quantity,
+          price: product.price,
+        })
+      );
+      alert("success");
+    }
   };
 
   const goToCart = () => {
-    if (check()) props.history.push("/cart");
+    if (check())
+      dispatch(
+        addItem({
+          slug: product.slug,
+          size: size,
+          quantity: quantity,
+          price: product.price,
+        })
+      );
+
+    props.history.push("/cart");
   };
 
   return (

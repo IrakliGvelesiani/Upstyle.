@@ -1,0 +1,210 @@
+.cart {
+  font-family: "Kameron", serif;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  @include tablet {
+    flex-wrap: wrap;
+  }
+
+  &__list {
+    width: 60%;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    width: 600px;
+    padding: 30px;
+    margin-left: 100px;
+    margin-top: 50px;
+
+    @include mobile {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 30px;
+      position: unset;
+    }
+
+    &__txt {
+      & > * {
+        margin-bottom: 10px;
+      }
+
+      p {
+        border-bottom: 1px solid $txt-second-color;
+        font-size: 1.25rem;
+      }
+
+      &__price {
+        @include flex(center, space-between);
+        padding: 10px 0;
+        font-size: 1.25rem;
+
+        span:nth-child(2) {
+          font-size: 1.25rem;
+          color: $main-color;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &__btn {
+      & > * {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__item {
+    border-bottom: 1px solid $txt-second-color;
+    padding-bottom: 20px;
+    @include flex(center, flex-start);
+    margin-bottom: 20px;
+
+    &__image {
+      margin-top: 100px;
+      // width: 10%;
+      margin-right: 20px;
+
+      img {
+        width: 150px;
+        height: 190px;
+
+        @include tablet {
+          width: 210px;
+        }
+
+        @include mobile {
+          width: 150px;
+        }
+      }
+
+      @include tablet {
+        img {
+          margin-top: -70px;
+        }
+      }
+    }
+
+    &__info {
+      @include flex(center, space-between);
+      flex-grow: 1;
+
+      @include mobile {
+        @include flex(flex-start, center);
+        flex-direction: column;
+
+        & > * {
+          margin-bottom: 10px;
+        }
+      }
+
+      &__name {
+        width: 40%;
+
+        @include mobile {
+          width: 100%;
+        }
+      }
+
+      &__name,
+      &__price {
+        font-size: 1.25rem;
+
+        .size {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    &__del {
+      font-size: 1.5rem;
+
+      .close {
+        cursor: pointer;
+
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+
+.promo {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $txt-second-color;
+  .Collapsible__contentInner {
+    .emailBox {
+      width: 280px;
+      display: flex;
+      justify-content: space-between;
+
+      @include tablet {
+        flex-wrap: wrap;
+      }
+    }
+    input {
+      margin-top: 20px;
+      width: 70%;
+      height: 30px;
+      background: rgb(218, 216, 216);
+      border: none;
+      padding: 2px;
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid #000;
+      }
+    }
+
+    button {
+      margin-top: 20px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 400;
+      border: none;
+      padding: 8px 20px;
+      background: $txt-main-color;
+      color: $txt-white;
+    }
+    button:hover {
+      background: #3a3833;
+    }
+  }
+
+  .Collapsible__trigger {
+    letter-spacing: 1px;
+    font-size: 14px;
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    border-bottom: 1px solid $txt-second-color;
+    padding: 10px;
+    color: $txt-main-color;
+
+    &:after {
+      content: "\2193 ";
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      display: block;
+      transition: transform 300ms;
+    }
+
+    &.is-open {
+      &:after {
+        transform: rotateZ(180deg);
+      }
+    }
+
+    &.is-disabled {
+      opacity: 0.5;
+      background-color: grey;
+    }
+  }
+}
