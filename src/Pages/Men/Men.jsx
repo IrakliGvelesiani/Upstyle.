@@ -81,7 +81,7 @@ const Men = () => {
   const showHideFilter = () => filterRef.current.classList.toggle("active");
 
   return (
-    <Helmet title="New Arrivals">
+    <Helmet title="Men">
       <div className="new-arrivals">
         <div className="new-arrivals__filter" ref={filterRef}>
           <div

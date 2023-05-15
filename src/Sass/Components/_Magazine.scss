@@ -1,0 +1,177 @@
+.new-arrival {
+  margin: 0 auto;
+  width: 70%;
+  margin-bottom: 50px;
+
+  .title {
+    text-align: center;
+    margin-top: 5rem;
+    h2 {
+      letter-spacing: 2px;
+      font-weight: 500;
+      font-size: 3rem;
+    }
+  }
+  .row {
+    display: grid;
+
+    .col {
+      position: relative;
+      padding: 1rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &-1,
+      &-2 {
+        grid-column: 3;
+      }
+
+      &-3 {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+      }
+
+      h3 {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        color: $txt-white;
+        font-size: 2rem;
+        line-height: 3.5rem;
+
+        span {
+          display: block;
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .new-arrival {
+    width: 100%;
+    .row {
+      .col {
+        h3 {
+          font-size: 1.6rem;
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .new-arrival {
+    width: 100%;
+    .row {
+      display: block;
+      .col {
+        h3 {
+          bottom: 15%;
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.styleCard {
+  color: $txt-main-color;
+  margin: 45px 0px;
+}
+
+.styleImage {
+  max-height: 440px;
+  overflow: hidden;
+}
+
+.styleCardTitle {
+  font-family: Avenir-Heavy;
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin: 30px 0px 0px 0px;
+}
+
+.styleDescription {
+  font-weight: 600;
+  font-size: 15px;
+  margin: 30px 0 0 0;
+}
+
+/* Responsive Styles */
+@include tablet {
+  .styleCard {
+    margin: 30px 0px;
+  }
+
+  .styleCardTitle {
+    font-size: 1.5rem;
+  }
+
+  .styleDescription {
+    font-size: 14px;
+  }
+}
+
+@include mobile {
+  .cards {
+    gap: 10px;
+  }
+
+  .styleCard {
+    margin: 20px 0px;
+  }
+
+  .styleCardTitle {
+    font-size: 1.3rem;
+    margin: 20px 0px 0px 0px;
+  }
+
+  .styleDescription {
+    font-size: 13px;
+    margin: 20px 0 0 0;
+  }
+}
+
+.subscribe__banner {
+  margin-top: 40px;
+  .banner {
+    padding: 40px;
+    border-radius: 0;
+    width: 100%;
+    background: radial-gradient(
+      circle at 18.7% 37.8%,
+      rgb(65, 64, 64) 0%,
+      rgb(17, 17, 17) 90%
+    );
+
+    h3,
+    p {
+      color: $txt-white;
+    }
+
+    button {
+      padding: 15px 70px;
+      color: $txt-main-color;
+      background: $txt-white;
+
+      &:hover {
+        background: #c5c3c3;
+      }
+    }
+  }
+}
